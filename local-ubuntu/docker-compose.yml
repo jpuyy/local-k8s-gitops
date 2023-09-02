@@ -1,12 +1,13 @@
 ---
 version: '3'
 services:
-  jenkins:
+  standalone-ubuntu:
     container_name: standalone-ubuntu
     restart: always
     build:
         context: standalone-ubuntu
     image: standalone-ubuntu
+    entrypoint: ["sleep", "infinity"]
     ports:
       - "2222:22"
     volumes:
