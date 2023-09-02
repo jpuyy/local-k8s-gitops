@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  jenkins:
+    container_name: standalone-ubuntu
+    restart: always
+    build:
+        context: standalone-ubuntu
+    image: standalone-ubuntu
+    ports:
+      - "2222:22"
+    volumes:
+      - "$PWD/root:/root"
