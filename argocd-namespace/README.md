@@ -2,6 +2,12 @@
 
 https://argo-cd.readthedocs.io/en/stable/
 
+Check pods/endpoints
+
+```
+kubectl get pods,ep -n argocd
+```
+
 ### port forward svc and get admin/password
 ```
 kubectl port-forward svc/argocd-server -n argocd 8080:443
