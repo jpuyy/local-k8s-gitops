@@ -1,0 +1,2 @@
+GOVERSION=go1.17.4
+GOARCH=arm64

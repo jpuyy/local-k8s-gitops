@@ -1,0 +1,4 @@
+configMapGenerator:
+- name: app-config
+  envs:
+  - golang_env.txt
